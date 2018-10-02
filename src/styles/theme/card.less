@@ -11,7 +11,7 @@
 @card-body-padding-vertical:                   @global-gutter;
 
 @card-body-padding-horizontal-l:               @global-medium-gutter;
-@card-body-padding-vertical-l:                 @global-medium-gutter;
+@card-body-padding-vertical-l:                 @global-gutter;
 
 @card-header-padding-horizontal:               @global-gutter;
 @card-header-padding-vertical:                 round(@global-gutter / 2);
@@ -50,12 +50,12 @@
 @card-secondary-hover-background:              @card-secondary-background;
 @card-secondary-color-mode:                    light;
 
-@card-small-body-padding-horizontal:           @global-margin;
-@card-small-body-padding-vertical:             @global-margin;
-@card-small-header-padding-horizontal:         @global-margin;
-@card-small-header-padding-vertical:           round(@global-margin / 1.5);
-@card-small-footer-padding-horizontal:         @global-margin;
-@card-small-footer-padding-vertical:           round(@global-margin / 1.5);
+@card-small-body-padding-horizontal:           @global-small-gutter;
+@card-small-body-padding-vertical:             @global-small-gutter;
+@card-small-header-padding-horizontal:         @global-small-gutter;
+@card-small-header-padding-vertical:           round(@global-small-margin / 1.5);
+@card-small-footer-padding-horizontal:         @global-small-gutter;
+@card-small-footer-padding-vertical:           round(@global-small-margin / 1.5);
 
 @card-large-body-padding-horizontal-l:         @global-large-gutter;
 @card-large-body-padding-vertical-l:           @global-large-gutter;
@@ -89,7 +89,17 @@
 // Component
 // ========================================================================
 
-.hook-card() { transition: box-shadow 0.1s ease-in-out; }
+.hook-card() {
+    display: block;
+    min-height: 400px;
+    line-height: 1.38;
+    font-weight: 500;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.uk-card-small {
+    min-height: 190px;
+}
 
 
 // Sections
