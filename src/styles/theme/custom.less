@@ -6,6 +6,63 @@ a.uk-light:hover {
   background-image: none;
 }
 
-.tm-news-small h3 {
-  line-height: 30px;
+.tm-companion-item {
+  width: 102px;
+
+  h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+  }
+}
+
+.tm-blog-title {
+  height: 52px;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tm-blog-footer {
+  font-size: 14px;
+}
+
+.tm-pages-list {
+
+  a {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+    font-size: 15px;
+    line-height: 1.9;
+
+    + a {
+      padding-left: 28px;
+
+      &::before {
+        content: '\f0a3';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        line-height: normal;
+        font-family: FontAwesome;
+        font-size: 13px;
+        color: #aba4a4;
+        transform: translateY(-50%);
+      }
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.tm-section-about {
+  font-size: 14px;
+  line-height: 2;
+
+  .uk-text-large {
+    font-size: 18px;
+  }
 }
