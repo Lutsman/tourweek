@@ -8,14 +8,14 @@
 // ========================================================================
 
 @breadcrumb-item-font-size:                         @global-small-font-size;
-@breadcrumb-item-color:                             @global-muted-color;
-@breadcrumb-item-hover-color:                       @global-color;
+@breadcrumb-item-color:                             @global-link-color;
+@breadcrumb-item-hover-color:                       @global-link-hover-color;
 @breadcrumb-item-hover-text-decoration:             none;
-@breadcrumb-item-active-color:                      @global-color;
+@breadcrumb-item-active-color:                      @global-link-hover-color;
 
-@breadcrumb-divider:                                "/";
-@breadcrumb-divider-margin-horizontal:              20px;
-@breadcrumb-divider-color:                          @global-muted-color;
+@breadcrumb-divider:                                "\F105";
+@breadcrumb-divider-margin-horizontal:              10px;
+@breadcrumb-divider-color:                          @global-link-color;
 
 // Component
 // ========================================================================
@@ -26,7 +26,9 @@
 // Items
 // ========================================================================
 
-.hook-breadcrumb-item() {}
+.hook-breadcrumb-item() {
+  text-transform: uppercase;
+}
 
 .hook-breadcrumb-item-hover() {}
 
@@ -34,7 +36,9 @@
 
 .hook-breadcrumb-item-active() {}
 
-.hook-breadcrumb-divider() {}
+.hook-breadcrumb-divider() {
+  font-family: FontAwesome;
+}
 
 
 // Miscellaneous
