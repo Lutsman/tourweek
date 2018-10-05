@@ -212,7 +212,7 @@
 
                         <!--Tourist blogs-->
                         <div>
-                            <div class="uk-flex-middle uk-flex-between" uk-grid>
+                            <div class="uk-flex-middle uk-flex-between uk-margin-bottom" uk-grid>
                                 <div>
                                     <h2>Блоги туристов</h2>
                                 </div>
@@ -222,10 +222,57 @@
                                             <div class="uk-text-little">Всего постов: <span class="uk-text-bold">563</span></div>
                                         </div>
                                         <div>
-                                            <a href="#" class="uk-button uk-button-orange uk-text-uppercase">Добавить пост</a>
+                                            <a href="#" class="uk-button uk-button-small uk-button-orange uk-text-uppercase">Добавить пост</a>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div uk-filter="target: .tm-filter-blogs">
+
+                                <div class="uk-child-width-expand uk-flex-middle" uk-grid>
+                                    <div>
+
+                                        <!-- Filter controls -->
+                                        <ul uk-tab>
+                                            <li class="uk-active" uk-filter-control="[data-tags*='last']"><a href="#">Последние сообщения</a></li>
+                                            <li uk-filter-control="[data-tags*='themes']"><a href="#">По темам</a></li>
+                                            <li uk-filter-control="[data-tags*='countries']"><a href="#">По странам</a></li>
+                                            <li uk-filter-control="[data-tags*='popular']"><a href="#">Популярные</a></li>
+                                            <li uk-filter-control="[data-tags*='discussed']"><a href="#">Обсуждаемые</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="uk-width-auto">
+
+                                        <!-- Search form -->
+                                        <form action="/" class="">
+                                            <div class="uk-flex">
+                                                <input class="uk-input" type="text" placeholder="Поиск по блогам">
+                                                <a href="#" class="uk-button uk-button-blue">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                                <!-- Layout items -->
+                                <ul class="tm-filter-blogs uk-list">
+                                    <li data-tags="last themes countries popular discussed">
+                                        <article class="uk-article">
+                                            <div class="uk-article-meta uk-flex uk-flex-middle">
+                                                <a href="#">Сергей Иванов</a>
+                                                <i class="fa fa-chevron-right uk-margin-small-left uk-margin-small-right" aria-hidden="true"></i>
+                                                <span>Всем</span>
+                                            </div>
+                                            <h3 class="uk-article-title uk-margin-small-top">Затерянный город Salton Sea на юге штата Калифорния</h3>
+                                        </article>
+                                    </li>
+                                </ul>
+
                             </div>
 
                             <div class="uk-child-width-expand" uk-grid uk-height-match="target: > div > .uk-card">

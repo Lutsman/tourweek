@@ -9,20 +9,20 @@
 
 @article-margin-top:                            @global-large-margin;
 
-@article-title-font-size-m:                     @global-xxlarge-font-size;
+@article-title-font-size-m:                     @global-large-font-size;
 @article-title-font-size:                       @article-title-font-size-m * 0.85;
 @article-title-line-height:                     1.2;
 
-@article-meta-font-size:                        @global-small-font-size;
-@article-meta-line-height:                      1.4;
-@article-meta-color:                            @global-muted-color;
+@article-meta-font-size:                        14px;
+@article-meta-line-height:                      1.5;
+@article-meta-color:                            #838383;
 
 //
 // New
 //
 
-@article-meta-link-color:                       @article-meta-color;
-@article-meta-link-hover-color:                 @global-color;
+@article-meta-link-color:                       @global-link-color;
+@article-meta-link-hover-color:                 @global-link-hover-color;
 
 
 // Component
@@ -40,7 +40,9 @@
 // Title
 // ========================================================================
 
-.hook-article-title() {}
+.hook-article-title() {
+    font-weight: 700;
+}
 
 
 // Meta
