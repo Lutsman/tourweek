@@ -12,7 +12,7 @@
 @button-large-line-height:                      @global-control-large-height - (@button-border-width * 2);
 
 @button-font-size:                              @global-small-font-size;
-@button-small-font-size:                        @global-small-font-size;
+@button-small-font-size:                        @global-font-size;
 @button-large-font-size:                        @global-small-font-size;
 
 @button-padding-horizontal:                     @global-gutter;
@@ -65,7 +65,7 @@
 // New
 //
 
-@button-text-transform:                         uppercase;
+@button-text-transform:                         none;
 
 @button-border-width:                           @global-border-width;
 
@@ -186,7 +186,6 @@
 
 .hook-button-link() {}
 
-
 // Miscellaneous
 // ========================================================================
 
@@ -252,3 +251,14 @@
 .hook-inverse-button-text-disabled() {}
 
 .hook-inverse-button-link() {}
+
+//
+// New
+
+.uk-button-orange {
+    background-color: @global-orange;
+
+    &:hover {
+        background-color: darken(@global-orange, 10%);
+    }
+}

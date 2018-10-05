@@ -29,6 +29,7 @@ module.exports = {
         ]),
         new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/index.html'),
+            file: "main.html",
             inject: "body",
         }),
         new HtmlWebpackPlugin({
