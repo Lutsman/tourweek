@@ -30,12 +30,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: "index.html",
-            inject: "body",
         }),
         new HtmlWebpackPlugin({
             template: './src/blogs.html',
             filename: "blogs.html",
-            inject: "body",
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
