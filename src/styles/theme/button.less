@@ -11,13 +11,13 @@
 @button-small-line-height:                      @global-control-small-height - (@button-border-width * 2);
 @button-large-line-height:                      @global-control-large-height - (@button-border-width * 2);
 
-@button-font-size:                              @global-small-font-size;
-@button-small-font-size:                        @global-font-size;
-@button-large-font-size:                        @global-small-font-size;
+@button-font-size:                              @global-font-size;
+@button-small-font-size:                        @global-small-font-size;
+@button-large-font-size:                        @global-large-font-size;
 
 @button-padding-horizontal:                     @global-gutter;
 @button-small-padding-horizontal:               @global-small-gutter;
-@button-large-padding-horizontal:               @global-medium-gutter;
+@button-large-padding-horizontal:               45px;
 
 @button-default-background:                     transparent;
 @button-default-hover-background:               transparent;
@@ -260,5 +260,13 @@
 
     &:hover {
         background-color: darken(@global-orange, 10%);
+    }
+}
+
+.uk-button-blue {
+    background-color: @global-blue;
+
+    &:hover {
+        background-color: darken(@global-blue, 10%);
     }
 }
