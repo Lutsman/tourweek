@@ -22,13 +22,17 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(
             [dest],
-            { root: Path.join(__dirname, '../') }),
+            {root: Path.join(__dirname, '../')}),
         new CopyWebpackPlugin([
             {from: Path.resolve(__dirname, '../public'), to: './'},
             {from: Path.resolve(__dirname, '../src/images'), to: './images'},
         ]),
         new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/index.html'),
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/blogs.html'),
             inject: "body",
         }),
         new webpack.ProvidePlugin({
