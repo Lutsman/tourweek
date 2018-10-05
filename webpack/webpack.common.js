@@ -28,13 +28,13 @@ module.exports = {
             {from: Path.resolve(__dirname, '../src/images'), to: './images'},
         ]),
         new HtmlWebpackPlugin({
-            template: Path.resolve(__dirname, '../src/index.html'),
-            file: "main.html",
+            template: './src/index.html',
+            filename: "index.html",
             inject: "body",
         }),
         new HtmlWebpackPlugin({
-            template: Path.resolve(__dirname, '../src/blogs.html'),
-            file: "blogs.html",
+            template: './src/blogs.html',
+            filename: "blogs.html",
             inject: "body",
         }),
         new webpack.ProvidePlugin({
