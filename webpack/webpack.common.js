@@ -33,6 +33,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/blogs.html'),
+            file: "blogs.html",
             inject: "body",
         }),
         new webpack.ProvidePlugin({
