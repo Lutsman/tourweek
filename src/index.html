@@ -218,7 +218,7 @@
                         <div class="uk-margin-xlarge-bottom">
                             <a href="" class="uk-button uk-button-large uk-button-blue uk-text-untransformed">Начать поиск</a>
                         </div>
-                        <ul class="uk-iconnav tm-social uk-flex-center uk-flex-middle uk-margin-medium-bottom">
+                        <ul class="tm-social uk-iconnav uk-flex-center uk-flex-middle uk-margin-medium-bottom">
                             <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -233,7 +233,7 @@
                 <div class="uk-container">
                     <div class="uk-child-width-expand" uk-grid>
 
-                        <!--Interesting in the world-->
+                        <!--Interesting in the world (main page)-->
                         <div>
                             <div uk-grid>
                                 <div>
@@ -251,9 +251,10 @@
                                         <div class="uk-position-relative uk-text-lead">Мексиканские зарисовки. Путешествие по Юкатану с заездом в штат Чьяпас. Часть 4</div>
                                     </a>
                                 </div>
-                                <div class="uk-width-medium">
 
-                                    <!--Banner-->
+                                <div class="uk-width-medium uk-visible@m">
+
+                                    <!-- Banner -->
                                     <a href="#" class="uk-card">
                                         <img src="images/banner.jpg" alt="" class="uk-width-1-1">
                                     </a>
@@ -261,7 +262,7 @@
                                 </div>
                             </div>
 
-                            <div class="uk-child-width-expand" uk-grid uk-height-match="target: > div > .uk-card">
+                            <div class="uk-child-width-1-1 uk-child-width-expand@m" uk-grid uk-height-match="target: > div > .uk-card">
                                 <div>
                                     <a href="#" class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
                                         <img src="images/image_interesting_1.jpg" alt="" uk-cover>
@@ -274,7 +275,7 @@
                                         <div class="uk-position-relative">Ростуризм призвал туроператоров оповещать туристов о вспышке кори в Румынии</div>
                                     </a>
                                 </div>
-                                <div class="uk-width-medium">
+                                <div class="uk-width-1-3@m uk-width-medium@l">
                                     <a href="#" class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
                                         <img src="images/image_interesting_small.jpg" alt="" uk-cover>
                                         <div class="uk-position-relative">Ростуризм призвал туроператоров оповещать туристов о вспышке кори в Румынии</div>
@@ -283,7 +284,18 @@
                             </div>
                         </div>
 
-                        <aside class="uk-width-large">
+                        <!-- Aside right (main page) -->
+                        <aside class="uk-width-medium uk-width-large@l" uk-margin="margin: uk-margin-medium-top">
+
+                            <div class="uk-hidden@m">
+
+                                <!-- Banner -->
+                                <a href="#" class="uk-card">
+                                    <img src="images/banner.jpg" alt="" class="uk-width-1-1">
+                                </a>
+
+                            </div>
+
 
                             <!--News list-->
                             <div class="tm-news-small">
@@ -389,6 +401,7 @@
                             </div>
 
                         </aside>
+
                     </div>
                 </div>
             </div>
@@ -410,52 +423,59 @@
                             <form action="/" class="uk-padding uk-background-default uk-box-shadow-small">
                                 <div class="uk-child-width-expand@m uk-flex-bottom" uk-grid>
                                     <div>
-                                        <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-select-search">Я ищу</label>
-                                            <div class="uk-form-controls uk-inline uk-width-1-1">
+                                        <div class="uk-child-width-expand@s" uk-grid>
+                                            <div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="form-select-search">Я ищу</label>
+                                                    <div class="uk-form-controls uk-inline uk-width-1-1">
                                             <span class="uk-form-icon uk-form-icon-flip">
                                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
                                             </span>
-                                                <select class="uk-select" id="form-select-search">
-                                                    <option>Девушку</option>
-                                                    <option>Парня</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-input-period">В период</label>
-                                            <div class="uk-child-width-1-2" uk-grid>
-                                                <div>
-                                                    <div class="uk-form-controls uk-inline uk-width-1-1">
-                                                    <span class="uk-form-icon">
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>
-                                                        <input class="uk-input" id="form-input-period" type="text"
-                                                               placeholder="15.02.2017">
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="uk-form-controls uk-inline uk-width-1-1">
-                                                    <span class="uk-form-icon">
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>
-                                                        <input class="uk-input" type="text" placeholder="15.02.2017">
+                                                        <select class="uk-select" id="form-select-search">
+                                                            <option>Девушку</option>
+                                                            <option>Парня</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
 
-                                    <div>
-                                        <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-input-place">Куда</label>
-                                            <div class="uk-form-controls uk-inline uk-width-1-1">
-                                                <span class="uk-form-icon uk-form-icon-flip">ESP</span>
-                                                <input class="uk-input" id="form-input-place" type="text"
-                                                       placeholder="Мадрид">
+                                            <div class="uk-width-large@m">
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="form-input-period">В
+                                                        период</label>
+                                                    <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+                                                        <div>
+                                                            <div class="uk-form-controls uk-inline uk-width-1-1">
+                                                    <span class="uk-form-icon">
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                    </span>
+                                                                <input class="uk-input" id="form-input-period"
+                                                                       type="text"
+                                                                       placeholder="15.02.2017">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-form-controls uk-inline uk-width-1-1">
+                                                    <span class="uk-form-icon">
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                    </span>
+                                                                <input class="uk-input" type="text"
+                                                                       placeholder="15.02.2017">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="uk-margin">
+                                                    <label class="uk-form-label" for="form-input-place">Куда</label>
+                                                    <div class="uk-form-controls uk-inline uk-width-1-1">
+                                                        <span class="uk-form-icon uk-form-icon-flip">ESP</span>
+                                                        <input class="uk-input" id="form-input-place" type="text"
+                                                               placeholder="Мадрид">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -468,7 +488,7 @@
                                                     <a href="#" class="uk-button uk-button-simple-orange">С фото</a>
                                                 </div>
                                                 <div>
-                                                    <a href="#" class="uk-button uk-button-blue">Найти</a>
+                                                    <a href="#" class="uk-button uk-button-orange">Найти</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -910,7 +930,7 @@
                     </div>
                     
                     <div>
-                        <ul class="uk-iconnav uk-flex-center uk-flex-middle">
+                        <ul class="tm-social uk-iconnav uk-flex-center uk-flex-middle">
                             <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
