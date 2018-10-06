@@ -228,6 +228,7 @@
                                 </div>
                             </div>
 
+                            <!-- Filter -->
                             <div uk-filter="target: .tm-filter-blogs">
 
                                 <div class="uk-child-width-expand uk-flex-middle" uk-grid>
@@ -261,57 +262,452 @@
 
                                 <!-- Layout items -->
                                 <ul class="tm-filter-blogs uk-list">
-                                    <li data-tags="last themes countries popular discussed">
+                                    <li data-tags="last countries popular discussed">
                                         <article class="uk-article">
-                                            <div class="uk-article-meta uk-flex uk-flex-middle">
-                                                <a href="#">Сергей Иванов</a>
-                                                <i class="fa fa-chevron-right uk-margin-small-left uk-margin-small-right" aria-hidden="true"></i>
-                                                <span>Всем</span>
+                                            <div class="uk-child-width-expand uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <div class="uk-padding uk-padding-remove-top">
+                                                        <img src="images/avatar_50x50_1.png" alt="" class="uk-border-circle">
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="uk-article-meta uk-flex uk-flex-middle">
+                                                        <a href="#">Сергей Иванов</a>
+                                                        <i class="fa fa-chevron-right uk-margin-small-left uk-margin-small-right"
+                                                           aria-hidden="true"></i>
+                                                        <span>Всем</span>
+                                                    </div>
+
+                                                    <h3 class="uk-article-title uk-margin-small-top">Затерянный город
+                                                        Salton Sea на юге штата Калифорния
+                                                    </h3>
+                                                    <p>В 1905 году проливные дожди и таяние снегов вызвали разлив реки
+                                                        Колорадо, в результате чего в одном из районов Калифорнии под
+                                                        названием Солтон Си образовалось большое искусственное озеро.
+                                                    </p>
+
+                                                    <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                                                        <div>
+                                                            <div class="tm-image-shadow">
+                                                                <img src="images/blog_img_1.jpg" alt=""
+                                                                     class="uk-width-1-1">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="tm-image-shadow">
+                                                                <img src="images/blog_img_2.jpg" alt=""
+                                                                     class="uk-width-1-1">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="uk-width-1-1">
+                                                            <div class="tm-article-footer">
+                                                                <div class="uk-text-center">
+                                                                    <a href="#" class="tm-button-more uk-button uk-button-small uk-button-white">
+                                                                        Читать полностью
+                                                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                                    <div>
+                                                                        <a href="#" class="uk-text-bold">
+                                                                            <i class="fa fa-comment" aria-hidden="true"></i>
+                                                                            Добавить комментарий
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="uk-flex uk-flex-middle uk-grid-small uk-text-muted" uk-grid>
+                                                                            <div>
+                                                                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                                                <span>4</span>
+                                                                            </div>
+                                                                            <div>
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                                <span>21</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <!--TODO поставить счетчик-->
+                                                                        <div class="">Тут поставить счетчик</div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="uk-text-muted">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span>21.03.2017 11:01</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <h3 class="uk-article-title uk-margin-small-top">Затерянный город Salton Sea на юге штата Калифорния</h3>
+                                        </article>
+                                    </li>
+
+                                    <li data-tags="last countries popular">
+                                        <article class="uk-article">
+                                            <div class="uk-child-width-expand uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <div class="uk-padding uk-padding-remove-top">
+                                                        <img src="images/avatar_50x50_2.png" alt="" class="uk-border-circle">
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="uk-article-meta uk-flex uk-flex-middle">
+                                                        <a href="#">Сергей Иванов</a>
+                                                        <i class="fa fa-chevron-right uk-margin-small-left uk-margin-small-right"
+                                                           aria-hidden="true"></i>
+                                                        <span>Всем</span>
+                                                    </div>
+
+                                                    <h3 class="uk-article-title uk-margin-small-top">Затерянный город
+                                                        Salton Sea на юге штата Калифорния
+                                                    </h3>
+                                                    <p>В 1905 году проливные дожди и таяние снегов вызвали разлив реки
+                                                        Колорадо, в результате чего в одном из районов Калифорнии под
+                                                        названием Солтон Си образовалось большое искусственное озеро.
+                                                    </p>
+
+                                                    <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                                                        <div>
+                                                            <div class="tm-image-shadow">
+                                                                <img src="images/blog_img_3.jpg" alt=""
+                                                                     class="uk-width-1-1">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="tm-image-shadow">
+                                                                <img src="images/blog_img_4.jpg" alt=""
+                                                                     class="uk-width-1-1">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="uk-width-1-1">
+                                                            <div class="tm-article-footer">
+                                                                <div class="uk-text-center">
+                                                                    <a href="#" class="tm-button-more uk-button uk-button-small uk-button-white">
+                                                                        Читать полностью
+                                                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                                    <div>
+                                                                        <a href="#" class="uk-text-bold">
+                                                                            <i class="fa fa-comment" aria-hidden="true"></i>
+                                                                            Добавить комментарий
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="uk-flex uk-flex-middle uk-grid-small uk-text-muted" uk-grid>
+                                                                            <div>
+                                                                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                                                <span>4</span>
+                                                                            </div>
+                                                                            <div>
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                                <span>21</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <!--TODO поставить счетчик-->
+                                                                        <div class="">Тут поставить счетчик</div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="uk-text-muted">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span>21.03.2017 11:01</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+
+                                    <li data-tags="last themes countries discussed">
+                                        <article class="uk-article">
+                                            <div class="uk-child-width-expand uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <div class="uk-padding uk-padding-remove-top">
+                                                        <img src="images/avatar_50x50_3.png" alt="" class="uk-border-circle">
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="uk-article-meta uk-flex uk-flex-middle">
+                                                        <a href="#">Сергей Иванов</a>
+                                                        <i class="fa fa-chevron-right uk-margin-small-left uk-margin-small-right"
+                                                           aria-hidden="true"></i>
+                                                        <span>Всем</span>
+                                                    </div>
+
+                                                    <h3 class="uk-article-title uk-margin-small-top">Затерянный город
+                                                        Salton Sea на юге штата Калифорния
+                                                    </h3>
+                                                    <p>В 1905 году проливные дожди и таяние снегов вызвали разлив реки
+                                                        Колорадо, в результате чего в одном из районов Калифорнии под
+                                                        названием Солтон Си образовалось большое искусственное озеро.
+                                                    </p>
+
+                                                    <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                                                        <div>
+                                                            <div class="tm-image-shadow">
+                                                                <img src="images/blog_img_1.jpg" alt=""
+                                                                     class="uk-width-1-1">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="tm-image-shadow">
+                                                                <img src="images/blog_img_2.jpg" alt=""
+                                                                     class="uk-width-1-1">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="uk-width-1-1">
+                                                            <div class="tm-article-footer">
+                                                                <div class="uk-text-center">
+                                                                    <a href="#" class="tm-button-more uk-button uk-button-small uk-button-white">
+                                                                        Читать полностью
+                                                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                                    <div>
+                                                                        <a href="#" class="uk-text-bold">
+                                                                            <i class="fa fa-comment" aria-hidden="true"></i>
+                                                                            Добавить комментарий
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="uk-flex uk-flex-middle uk-grid-small uk-text-muted" uk-grid>
+                                                                            <div>
+                                                                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                                                <span>4</span>
+                                                                            </div>
+                                                                            <div>
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                                <span>21</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <!--TODO поставить счетчик-->
+                                                                        <div class="">Тут поставить счетчик</div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="uk-text-muted">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span>21.03.2017 11:01</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+
+                                    <li data-tags="last themes popular">
+                                        <article class="uk-article">
+                                            <div class="uk-child-width-expand uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <div class="uk-padding uk-padding-remove-top">
+                                                        <img src="images/avatar_50x50_4.png" alt="" class="uk-border-circle">
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="uk-article-meta uk-flex uk-flex-middle">
+                                                        <a href="#">Сергей Иванов</a>
+                                                        <i class="fa fa-chevron-right uk-margin-small-left uk-margin-small-right"
+                                                           aria-hidden="true"></i>
+                                                        <span>Всем</span>
+                                                    </div>
+
+                                                    <h3 class="uk-article-title uk-margin-small-top">Затерянный город
+                                                        Salton Sea на юге штата Калифорния
+                                                    </h3>
+                                                    <p>В 1905 году проливные дожди и таяние снегов вызвали разлив реки
+                                                        Колорадо, в результате чего в одном из районов Калифорнии под
+                                                        названием Солтон Си образовалось большое искусственное озеро.
+                                                    </p>
+
+                                                    <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                                                        <div>
+                                                            <div class="tm-image-shadow">
+                                                                <img src="images/blog_img_3.jpg" alt=""
+                                                                     class="uk-width-1-1">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="tm-image-shadow">
+                                                                <img src="images/blog_img_4.jpg" alt=""
+                                                                     class="uk-width-1-1">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="uk-width-1-1">
+                                                            <div class="tm-article-footer">
+                                                                <div class="uk-text-center">
+                                                                    <a href="#" class="tm-button-more uk-button uk-button-small uk-button-white">
+                                                                        Читать полностью
+                                                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                                    <div>
+                                                                        <a href="#" class="uk-text-bold">
+                                                                            <i class="fa fa-comment" aria-hidden="true"></i>
+                                                                            Добавить комментарий
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="uk-flex uk-flex-middle uk-grid-small uk-text-muted" uk-grid>
+                                                                            <div>
+                                                                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                                                <span>4</span>
+                                                                            </div>
+                                                                            <div>
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                                <span>21</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <!--TODO поставить счетчик-->
+                                                                        <div class="">Тут поставить счетчик</div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="uk-text-muted">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span>21.03.2017 11:01</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+
+                                    <li data-tags="last countries popular discussed">
+                                        <article class="uk-article">
+                                            <div class="uk-child-width-expand uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <div class="uk-padding uk-padding-remove-top">
+                                                        <img src="images/avatar_50x50_5.png" alt="" class="uk-border-circle">
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="uk-article-meta uk-flex uk-flex-middle">
+                                                        <a href="#">Сергей Иванов</a>
+                                                        <i class="fa fa-chevron-right uk-margin-small-left uk-margin-small-right"
+                                                           aria-hidden="true"></i>
+                                                        <span>Всем</span>
+                                                    </div>
+
+                                                    <h3 class="uk-article-title uk-margin-small-top">Затерянный город
+                                                        Salton Sea на юге штата Калифорния
+                                                    </h3>
+                                                    <p>В 1905 году проливные дожди и таяние снегов вызвали разлив реки
+                                                        Колорадо, в результате чего в одном из районов Калифорнии под
+                                                        названием Солтон Си образовалось большое искусственное озеро.
+                                                    </p>
+
+                                                    <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+                                                        <div>
+                                                            <div class="tm-image-shadow">
+                                                                <img src="images/blog_img_5.jpg" alt=""
+                                                                     class="uk-width-1-1">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="tm-image-shadow">
+                                                                <img src="images/blog_img_6.jpg" alt=""
+                                                                     class="uk-width-1-1">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="uk-width-1-1">
+                                                            <div class="tm-article-footer">
+                                                                <div class="uk-text-center">
+                                                                    <a href="#" class="tm-button-more uk-button uk-button-small uk-button-white">
+                                                                        Читать полностью
+                                                                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                                    <div>
+                                                                        <a href="#" class="uk-text-bold">
+                                                                            <i class="fa fa-comment" aria-hidden="true"></i>
+                                                                            Добавить комментарий
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="uk-flex uk-flex-middle uk-grid-small uk-text-muted" uk-grid>
+                                                                            <div>
+                                                                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                                                <span>4</span>
+                                                                            </div>
+                                                                            <div>
+                                                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                                <span>21</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <!--TODO поставить счетчик-->
+                                                                        <div class="">Тут поставить счетчик</div>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="uk-text-muted">
+                                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                            <span>21.03.2017 11:01</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </article>
                                     </li>
                                 </ul>
 
                             </div>
 
-                            <div class="uk-child-width-expand" uk-grid uk-height-match="target: > div > .uk-card">
-                                <div>
-                                    <a href="#" class="uk-card uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
-                                        <img src="images/image_interesting_big.jpg" alt="" uk-cover>
-                                        <div class="uk-position-relative uk-text-lead">Мексиканские зарисовки. Путешествие по Юкатану с заездом в штат Чьяпас. Часть 4</div>
-                                    </a>
-                                </div>
-                                <div class="uk-width-medium">
-                                    <a href="#" class="uk-card">
-                                        <img src="images/banner.jpg" alt="" class="uk-width-1-1">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="uk-child-width-expand" uk-grid uk-height-match="target: > div > .uk-card">
-                                <div>
-                                    <a href="#" class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
-                                        <img src="images/image_interesting_1.jpg" alt="" uk-cover>
-                                        <div class="uk-position-relative">Ростуризм призвал туроператоров оповещать туристов о вспышке кори в Румынии</div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
-                                        <img src="images/image_interesting_2.jpg" alt="" uk-cover>
-                                        <div class="uk-position-relative">Ростуризм призвал туроператоров оповещать туристов о вспышке кори в Румынии</div>
-                                    </a>
-                                </div>
-                                <div class="uk-width-medium">
-                                    <a href="#" class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
-                                        <img src="images/image_interesting_small.jpg" alt="" uk-cover>
-                                        <div class="uk-position-relative">Ростуризм призвал туроператоров оповещать туристов о вспышке кори в Румынии</div>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
 
-                        <!--Aside right-->
+                        <!-- Aside right -->
                         <aside class="uk-width-medium" uk-margin="margin: uk-margin-medium-top">
 
                             <div>
@@ -336,9 +732,9 @@
                                             <div class="uk-margin-small-bottom">
                                                 <a href="" class="uk-link-text">Кафедральный собор Валетты</a>
                                             </div>
-                                            <div class="uk-flex uk-flex-between uk-text-muted uk-text-small">
+                                            <div class="uk-flex uk-flex-between uk-text-muted uk-text-small uk-grid-small" uk-grid>
                                                 <div>21.03.2017 11:01</div>
-                                                <div class="uk-margin-small-left">
+                                                <div>
                                                     <i class="fa fa-eye" aria-hidden="true"></i>
                                                     <span>21</span>
                                                 </div>
@@ -355,9 +751,9 @@
                                                 <a href="" class="uk-link-text">Секретная пещера тамплиеров в графстве
                                                     Шропшир в Англии</a>
                                             </div>
-                                            <div class="uk-flex uk-flex-between uk-text-muted uk-text-small">
+                                            <div class="uk-flex uk-flex-between uk-text-muted uk-text-small uk-grid-small" uk-grid>
                                                 <div>21.03.2017 11:01</div>
-                                                <div class="uk-margin-small-left">
+                                                <div>
                                                     <i class="fa fa-eye" aria-hidden="true"></i>
                                                     <span>21</span>
                                                 </div>
@@ -373,9 +769,9 @@
                                             <div class="uk-margin-small-bottom">
                                                 <a href="" class="uk-link-text">Кафедральный собор Валетты</a>
                                             </div>
-                                            <div class="uk-flex uk-flex-between uk-text-muted uk-text-small">
+                                            <div class="uk-flex uk-flex-between uk-text-muted uk-text-small uk-grid-small" uk-grid>
                                                 <div>21.03.2017 11:01</div>
-                                                <div class="uk-margin-small-left">
+                                                <div>
                                                     <i class="fa fa-eye" aria-hidden="true"></i>
                                                     <span>21</span>
                                                 </div>
@@ -392,9 +788,9 @@
                                                 <a href="" class="uk-link-text">Россиянин более четырёх лет проживал в
                                                     Таиланде без визы</a>
                                             </div>
-                                            <div class="uk-flex uk-flex-between uk-text-muted uk-text-small">
+                                            <div class="uk-flex uk-flex-between uk-text-muted uk-text-small uk-grid-small" uk-grid>
                                                 <div>21.03.2017 11:01</div>
-                                                <div class="uk-margin-small-left">
+                                                <div>
                                                     <i class="fa fa-eye" aria-hidden="true"></i>
                                                     <span>21</span>
                                                 </div>
@@ -411,9 +807,9 @@
                                                 <a href="" class="uk-link-text">Россиянин более четырёх лет проживал в
                                                     Таиланде без визы</a>
                                             </div>
-                                            <div class="uk-flex uk-flex-between uk-text-muted uk-text-small">
+                                            <div class="uk-flex uk-flex-between uk-text-muted uk-text-small uk-grid-small" uk-grid>
                                                 <div>21.03.2017 11:01</div>
-                                                <div class="uk-margin-small-left">
+                                                <div>
                                                     <i class="fa fa-eye" aria-hidden="true"></i>
                                                     <span>21</span>
                                                 </div>
@@ -446,6 +842,81 @@
                             </div>
 
                         </aside>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Archive -->
+            <div class="uk-section">
+                <div class="uk-container">
+                    <h2 class="uk-text-center">Архив блогов</h2>
+
+                    <div class="uk-child-width-1-4@m" uk-grid>
+                        <div>
+                            <a href="#"
+                               class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
+                                <img src="images/interesting_blog_1.jpg" alt="" uk-cover>
+                                <div class="uk-position-relative">Рыжий голый… идейный</div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"
+                               class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
+                                <img src="images/interesting_blog_2.jpg" alt="" uk-cover>
+                                <div class="uk-position-relative">Ростуризм призвал туроператоров оповещать туристов о
+                                    вспышке кори в Румынии
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"
+                               class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
+                                <img src="images/interesting_blog_3.jpg" alt="" uk-cover>
+                                <div class="uk-position-relative">Самый красочный индийский праздник – Холи</div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"
+                               class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
+                                <img src="images/interesting_blog_4.jpg" alt="" uk-cover>
+                                <div class="uk-position-relative">Церемония очищения трупов в Индонезии</div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"
+                               class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
+                                <img src="images/interesting_blog_5.jpg" alt="" uk-cover>
+                                <div class="uk-position-relative">Уникальные фото с орбиты земли</div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"
+                               class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
+                                <img src="images/interesting_blog_6.jpg" alt="" uk-cover>
+                                <div class="uk-position-relative">Самый красочный индийский праздник – Холи</div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"
+                               class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
+                                <img src="images/interesting_blog_7.jpg" alt="" uk-cover>
+                                <div class="uk-position-relative">Ростуризм призвал туроператоров оповещать туристов о
+                                    вспышке кори в Румынии
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"
+                               class="uk-card uk-card-small uk-card-body uk-cover-container uk-flex uk-flex-bottom uk-light">
+                                <img src="images/interesting_blog_8.jpg" alt="" uk-cover>
+                                <div class="uk-position-relative">Рыжий голый… идейный</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin-medium-top uk-text-center">
+                        <a href="#" class="uk-button uk-button-simple-orange">Перейти в архив</a>
                     </div>
                 </div>
             </div>
