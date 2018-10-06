@@ -185,6 +185,7 @@
 .hook-form-label() {
   color: @form-label-color;
   font-size: @form-label-font-size;
+  text-transform: uppercase;
 }
 
 // Layout
@@ -240,4 +241,9 @@
 
 .uk-form-icon-flip {
   padding-right: 3px;
+}
+
+input[checked] + label {
+  background-color: darken(@global-orange, 10%);
+  color: @global-inverse-color;
 }
