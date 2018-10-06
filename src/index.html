@@ -19,20 +19,21 @@
             <div class="tm-pageheader tm-pageheader-main uk-section uk-padding-remove uk-light">
 
                 <!--Header-->
-                <header class="uk-position-relative">
-                    <nav class="uk-navbar-container uk-light" uk-navbar>
-                        <div class="uk-navbar-center">
+                <header class="uk-navbar-container uk-position-relative">
+                    <nav class="uk-light" uk-navbar>
+                        <div class="uk-navbar-left">
                             <a class="uk-navbar-item uk-logo" href="/">
                                 <img src="images/logo_tourweek.png" alt="">
                             </a>
 
-                            <!--<a href="#offcanvas-overlay" class="uk-navbar-toggle" uk-navbar-toggle-icon
-                               uk-toggle></a>-->
-                            <ul class="uk-navbar-nav">
+                            <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon
+                               uk-toggle></a>
+
+                            <ul class="uk-navbar-nav uk-visible@l">
                                 <li>
                                     <a href="#" class="uk-navbar-toggle" uk-navbar-toggle-icon></a>
                                     <div class="uk-navbar-dropdown"
-                                         uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify;">
+                                         uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
                                         <div class="uk-container">
                                             <ul class="uk-nav uk-navbar-dropdown-nav uk-column-1-4">
                                                 <li><a href="#">Попутчики</a></li>
@@ -55,13 +56,16 @@
                                     </div>
                                 </li>
                             </ul>
-                            <ul class="uk-navbar-nav uk-margin-left uk-margin-right">
+                        </div>
+
+                        <div class="uk-navbar-center uk-visible@l">
+                            <ul class="uk-navbar-nav">
                                 <li><a href="#">Попутчики</a></li>
                                 <li><a href="#">Блоги</a></li>
                                 <li>
                                     <a href="#">Страны</a>
                                     <div class="uk-navbar-dropdown"
-                                         uk-drop="mode: click; boundary: !nav; boundary-align: true; pos: bottom-justify;">
+                                         uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
                                         <div class="uk-container">
                                             <div class="" uk-slider>
                                                 <div class="tm-slider-content uk-position-relative">
@@ -184,6 +188,9 @@
                                 <li><a href="#">Статьи</a></li>
                                 <li><a href="#">Новости</a></li>
                             </ul>
+                        </div>
+
+                        <div class="uk-navbar-right">
                             <div class="uk-navbar-item">
                                 <a href="#" class="uk-button uk-button-small uk-button-orange">Авиабилеты</a>
                             </div>
@@ -471,7 +478,7 @@
                             </form>
                         </div>
 
-                        <div uk-grid>
+                        <div class="uk-child-width-expand@m" uk-grid>
                             <div>
                                 <div class="tm-companion-item uk-text-center">
                                     <img src="images/avatar_1.png" alt="" class="uk-border-circle">
@@ -542,6 +549,9 @@
                                     <div class="uk-text-small uk-text-muted uk-text-truncate">25 лет</div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="uk-child-width-expand@m" uk-grid>
                             <div>
                                 <div class="tm-companion-item uk-text-center">
                                     <img src="images/avatar_11.png" alt="" class="uk-border-circle">
