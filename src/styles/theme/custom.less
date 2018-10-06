@@ -72,17 +72,42 @@ footer {
   padding: 0 70px;
 }
 
+//navbar
+
 .tm-pageheader {
   min-height: 500px;
 
   .uk-navbar-container {
     background: transparent;
   }
+
+  .tm-navbar-active  {
+    background-color: @global-primary-background;
+  }
 }
 
 .tm-pageheader-main {
   background: url("../../images/bg_pageheader_main.jpg") no-repeat center;
   background-size: cover;
+}
+
+
+.tm-navbar-active {
+  background-color: @global-primary-background;
+}
+
+.tm-navbar-item-active {
+  background-color: @navbar-dropdown-background;
+}
+
+.tm-navbar-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
 // social buttons
