@@ -11,7 +11,7 @@
 @button-small-line-height:                      @global-control-small-height - (@button-border-width * 2);
 @button-large-line-height:                      @global-control-large-height - (@button-border-width * 2);
 
-@button-font-size:                              @global-font-size;
+@button-font-size:                              @global-small-font-size;
 @button-small-font-size:                        @global-small-font-size;
 @button-large-font-size:                        @global-large-font-size;
 
@@ -65,7 +65,7 @@
 // New
 //
 
-@button-text-transform:                         none;
+@button-text-transform:                         uppercase;
 
 @button-border-width:                           @global-border-width;
 
@@ -257,6 +257,14 @@
 
 .uk-button-orange {
     background-color: @global-orange;
+
+    &:hover {
+        background-color: darken(@global-orange, 10%);
+    }
+}
+
+.uk-button-simple-orange {
+    border: solid 1px @global-orange;
 
     &:hover {
         background-color: darken(@global-orange, 10%);
