@@ -28,7 +28,7 @@
 @navbar-dropdown-z-index: @global-z-index + 20;
 @navbar-dropdown-width: 100%;
 @navbar-dropdown-margin: 15px;
-@navbar-dropdown-padding: 0;
+@navbar-dropdown-padding: 30px;
 @navbar-dropdown-background: #2e547b;
 @navbar-dropdown-color: @global-color;
 @navbar-dropdown-grid-gutter-horizontal: (@navbar-dropdown-padding * 2);
@@ -55,7 +55,7 @@
 
 @navbar-nav-item-text-transform: none;
 
-@navbar-dropdown-nav-font-size: @global-small-font-size;
+@navbar-dropdown-nav-font-size: @global-font-size;
 
 @navbar-dropdown-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 
@@ -68,6 +68,8 @@
 // ========================================================================
 
 .hook-navbar() {
+  position: relative;
+  z-index: 50;
 }
 
 // Container
@@ -86,13 +88,14 @@
 }
 
 .hook-navbar-nav-item-hover() {
-  background-color: @navbar-dropdown-background;
+
 }
 
 .hook-navbar-nav-item-onclick() {
 }
 
 .hook-navbar-nav-item-active() {
+  background-color: @navbar-dropdown-background;
 }
 
 // Item
@@ -103,7 +106,7 @@
 
 // Toggle
 // ========================================================================
-
+// TODO active toggler styles
 .hook-navbar-toggle() {
 }
 
@@ -111,11 +114,9 @@
 }
 
 .hook-navbar-toggle-icon() {
-  opacity: 0.5;
 }
 
 .hook-navbar-toggle-icon-hover() {
-  opacity: 1;
 }
 
 // Subtitle
@@ -152,9 +153,11 @@
 }
 
 .hook-navbar-dropdown-nav-item() {
+  padding: 5px 10px;
 }
 
 .hook-navbar-dropdown-nav-item-hover() {
+  background-color: @global-primary-background;
 }
 
 .hook-navbar-dropdown-nav-header() {

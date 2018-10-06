@@ -1,22 +1,27 @@
 const $navbar = $('.uk-navbar');
 const $body = $('body');
-const activeNavClass = 'tm-navbar-active';
-const activeNavItemClass= 'tm-navbar-item-active';
 const $overlay = $('<div class="tm-navbar-overlay"></div>');
+const activeNavClassName = 'tm-navbar-active';
+const activeTogglerClassName= 'uk-active';
+const relativePosClassName = 'uk-position-relative';
 
 $navbar.on({
-    beforeshow: (e) => {
-        console.dir(e);
-        $navbar.addClass(activeNavClass);
-        $body
-            .css('position', 'relative')
-            .append($overlay);
-        $overlay.fadeIn(200);
+    beforeshow: e => {
+        const $toggler = $(e.target).parent();
+        $toggler.addClass(activeTogglerClassName);
+        $navbar.addClass(activeNavClassName);
+        $body.addClass(relativePosClassName);
+        $overlay
+            .appendTo($body)
+            .fadeIn(200);
     },
-    beforehide: (e) => {
-        console.dir(e);
-        $navbar.removeClass(activeNavClass);
-        $overlay.fadeOut(200, () => $overlay.remove());
-        document.body.style.position = '';
+    beforehide: e => {
+        const $toggler = $(e.target).parent();
+        $toggler.removeClass(activeTogglerClassName);
+        $navbar.removeClass(activeNavClassName);
+        $overlay.fadeOut(200, () => {
+            $overlay.remove();
+            $body.removeClass(relativePosClassName);
+        });
     },
 });

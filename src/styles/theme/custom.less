@@ -72,11 +72,17 @@ footer {
   padding: 0 70px;
 }
 
+//navbar
+
 .tm-pageheader {
   min-height: 500px;
 
   .uk-navbar-container {
     background: transparent;
+  }
+
+  .tm-navbar-active  {
+    background-color: @global-primary-background;
   }
 }
 
@@ -85,23 +91,9 @@ footer {
   background-size: cover;
 }
 
-// social buttons
-.tm-social {
-  i {
-    width: 34px;
-    height: 34px;
-    font-size: 19px;
-    line-height: 34px;
-    text-align: center;
-    border: 1px solid;
-    border-radius: 50%;
-    box-sizing: border-box;
-  }
-}
 
-//navbar
 .tm-navbar-active {
-  background-color: #48729e;
+  background-color: @global-primary-background;
 }
 
 .tm-navbar-item-active {
@@ -116,4 +108,18 @@ footer {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+}
+
+// social buttons
+.tm-social {
+  i {
+    width: 34px;
+    height: 34px;
+    font-size: 19px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
 }
