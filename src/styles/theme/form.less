@@ -203,10 +203,20 @@
 .hook-form-misc() {
 }
 
+.uk-form-icon:not(.uk-form-icon-flip) ~ .uk-select { padding-left: @form-icon-width !important; }
+
+.uk-form-icon-flip ~ .uk-select { padding-right: @form-icon-width !important; }
+
 // Inverse
 // ========================================================================
 
-@inverse-form-label-color: @inverse-global-emphasis-color;
+@inverse-form-color:                           @global-emphasis-color;
+@inverse-form-focus-color:                     @global-emphasis-color;
+
+@inverse-form-icon-color:                      @global-emphasis-color;
+@inverse-form-icon-hover-color:                @global-emphasis-color;
+
+@inverse-form-label-color:                     @inverse-global-emphasis-color;
 
 .hook-inverse-form() {
   border-color: @inverse-global-border;
