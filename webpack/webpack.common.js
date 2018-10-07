@@ -39,6 +39,10 @@ module.exports = {
             template: './src/visas.html',
             filename: "visas.html",
         }),
+        new HtmlWebpackPlugin({
+            template: './src/visa-text.html',
+            filename: "visa-text.html",
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
