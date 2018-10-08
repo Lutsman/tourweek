@@ -47,6 +47,10 @@ module.exports = {
             template: './src/companions.html',
             filename: "companions.html",
         }),
+        new HtmlWebpackPlugin({
+            template: './src/companions-add-listings.html',
+            filename: "companions-add-listings.html",
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
