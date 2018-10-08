@@ -6,12 +6,9 @@
 
 $(() => {
     const $datepicker = $('[datepicker]');
+    const options = {
+        placeholder: '',
+    };
 
-    // $datepicker.each(function () {
-    //     console.dir(this);
-    //     console.dir(flatpickr)
-    //     flatpickr(this);
-    // });
-
-    $datepicker.datepicker({});
+    $datepicker.datepicker(options);
 });
