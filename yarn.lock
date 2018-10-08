@@ -1408,6 +1408,10 @@ deep-extend@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
 
+deepmerge@~0.2.10:
+  version "0.2.10"
+  resolved "http://registry.npmjs.org/deepmerge/-/deepmerge-0.2.10.tgz#8906bf9e525a4fbf1b203b2afcb4640249821219"
+
 default-gateway@^2.6.0:
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/default-gateway/-/default-gateway-2.7.2.tgz#b7ef339e5e024b045467af403d50348db4642d0f"
@@ -4043,6 +4047,12 @@ snapdragon@^0.8.1:
     source-map "^0.5.6"
     source-map-resolve "^0.5.0"
     use "^3.1.0"
+
+social-likes-next@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/social-likes-next/-/social-likes-next-1.1.0.tgz#4a5edd40f78e71854b9e2328ce28ef85d949782f"
+  dependencies:
+    deepmerge "~0.2.10"
 
 sockjs-client@1.1.5:
   version "1.1.5"
