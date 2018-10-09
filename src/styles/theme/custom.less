@@ -22,6 +22,12 @@ a.uk-light:hover {
   margin-left: -10px;
 }
 
+[class*='uk-column'] label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
 .fa {
   line-height: inherit;
 }
@@ -201,13 +207,5 @@ input:checked + label.uk-button-simple-orange {
 
   .uk-text-lead {
     font-size: @global-large-font-size;
-  }
-}
-
-.tm-checkbox-destination label {
-  display: block;
-
-  + label {
-    margin-top: 10px;
   }
 }
