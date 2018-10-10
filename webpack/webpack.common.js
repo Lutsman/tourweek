@@ -56,6 +56,10 @@ module.exports = {
             filename: "registration.html",
         }),
         new HtmlWebpackPlugin({
+            template: './src/articles.html',
+            filename: "articles.html",
+        }),
+        new HtmlWebpackPlugin({
             template: './src/articles-inner.html',
             filename: "articles-inner.html",
         }),
