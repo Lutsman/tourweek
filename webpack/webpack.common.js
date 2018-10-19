@@ -63,6 +63,10 @@ module.exports = {
             template: './src/articles-inner.html',
             filename: "articles-inner.html",
         }),
+        new HtmlWebpackPlugin({
+            template: './src/photo.html',
+            filename: "photo.html",
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
