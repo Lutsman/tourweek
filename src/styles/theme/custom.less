@@ -24,7 +24,6 @@ a.uk-light:hover {
 
 [class*='uk-column'] label {
   display: block;
-  margin-bottom: 10px;
 }
 
 .fa {
@@ -54,12 +53,57 @@ input:checked + label.uk-button-simple-orange {
   color: @global-inverse-color;
 }
 
+form {
+
+  hr, .uk-hr {
+    border-top: 1px solid #d8d8d8;
+  }
+}
+
 .tm-input-shadow {
   border-color: #fff;
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.56), inset 0px 1px 2px 0 rgba(72, 114, 158, 0.61);
 }
 
-// content
+.tm-registration label {
+  line-height: @global-control-small-height;
+}
+
+.tm-form-companions {
+
+  [class*='uk-column'] label {
+    margin-bottom: 10px;
+  }
+
+  .uk-form-label {
+    text-transform: none;
+  }
+}
+
+.tm-form-social {
+
+  .uk-form-icon {
+    border-right: 1px solid @global-border;
+  }
+}
+
+.tm-checkbox-set {
+
+  .tm-checkbox {
+    display: block;
+    line-height: @global-control-small-height;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid @global-border;
+  }
+
+  input:checked + .tm-checkbox {
+    color: @global-primary-background;
+    border-color: @global-primary-background;
+  }
+}
+
+  // content
 
 .tm-companion-item {
 
