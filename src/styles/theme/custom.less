@@ -27,7 +27,6 @@ a.uk-light:hover {
   margin-bottom: 10px;
 }
 
-
 .fa {
   line-height: inherit;
 }
@@ -122,7 +121,7 @@ input:checked + label.uk-button-simple-orange {
     background: transparent;
   }
 
-  .tm-navbar-active  {
+  .tm-navbar-active {
     background-color: @global-primary-background;
   }
 }
@@ -142,7 +141,6 @@ input:checked + label.uk-button-simple-orange {
   background-size: cover;
 }
 
-
 .tm-navbar-active {
   background-color: @global-primary-background;
 }
@@ -157,14 +155,40 @@ input:checked + label.uk-button-simple-orange {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: @global-half-black;
   display: none;
 }
 
 // nav
+// rubrics nav, nav divider
 
-.tm-nav-divider > li:nth-child(n+2) {
-      border-top: 1px dashed rgba(0, 0, 0, 0.5);
+.tm-rubrics-nav, .tm-nav-divider {
+  > li {
+    > a {
+      padding: 5px 0 5px 10px;
+    }
+  }
+
+  > li:first-child {
+    padding-top: 10px;
+  }
+
+  > li:last-child {
+    padding-bottom: 10px;
+  }
+}
+
+.tm-nav-divider {
+  border-top: 1px solid @global-border;
+  margin-bottom: @global-margin;
+
+  > li:nth-child(n+2) {
+    border-top: 1px dashed @global-half-black;
+  }
+
+  >li:last-child {
+    border-bottom: 1px dashed @global-half-black;
+  }
 }
 
 // buttons
@@ -225,8 +249,6 @@ input:checked + label.uk-button-simple-orange {
 .tm-photo {
   background-color: #e9eef3;
 }
-
-
 
 /*Media*/
 
