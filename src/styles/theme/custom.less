@@ -1,3 +1,8 @@
+.uk-list-divider {
+  border-top: 1px solid @global-border;
+  margin-bottom: @global-margin;
+}
+
 a.uk-light:hover {
   color: @global-inverse-color;
 }
@@ -236,12 +241,6 @@ form {
 // rubrics nav, nav divider
 
 .tm-rubrics-nav, .tm-nav-divider {
-  > li {
-    > a {
-      padding: 5px 0 5px 10px;
-    }
-  }
-
   > li:first-child {
     padding-top: 10px;
   }
@@ -252,9 +251,6 @@ form {
 }
 
 .tm-nav-divider {
-  border-top: 1px solid @global-border;
-  margin-bottom: @global-margin;
-
   > li:nth-child(n+2) {
     border-top: 1px dashed @global-half-black;
   }
