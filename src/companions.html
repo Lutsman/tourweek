@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tourweek | Попутчики</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Roboto+Condensed&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 
@@ -219,8 +219,8 @@
 
                         <!-- Search for travel companions (Pageheader) -->
                         <div class="uk-margin-xlarge-bottom">
-                            <form action="/">
-                                <div class="uk-child-width-expand@s uk-grid-collapse" uk-grid>
+                            <form action="/" class="tm-form-pageheader">
+                                <div class="tm-grid-divider uk-child-width-expand@s uk-grid-collapse" uk-grid>
                                     <div class="uk-width-1-4@s uk-width-expand@m">
                                         <div class="uk-form-controls uk-inline uk-width-1-1">
                                             <span class="uk-form-icon uk-form-icon-flip">
@@ -246,7 +246,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="uk-width-1-2@s uk-width-1-5@m uk-width-auto@l">
+                                    <div class="uk-width-1-2@s uk-width-1-4@m">
                                         <div class="uk-child-width-1-2 uk-grid-collapse" uk-grid>
                                             <div>
                                                 <div class="uk-form-controls uk-inline uk-width-1-1">
@@ -310,7 +310,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="uk-form-controls uk-flex-center" uk-grid>
+                                <div class="uk-form-controls uk-flex-center uk-margin-medium-top" uk-grid>
                                     <div>
                                         <a href="" class="uk-button uk-button-large uk-button-orange">Добавить объявление</a>
                                     </div>
@@ -526,6 +526,7 @@
                                                         </div>
 
                                                         <div class="uk-flex uk-flex-middle uk-flex-between">
+                                                            <!-- #TODO 1, починить тоглер (скролл), 2, добавить класс на сам тоглер, чтобы менять текст свернуть/развернуть, 3, размнодить на все объявления -->
                                                             <a href="#tm-toggle-text-1" class="uk-text-bold" uk-toggle>
                                                                 <span opened-toggle>Развернуть</span><span closed-toggle hidden>Свернуть</span> <i class="fa fa-angle-double-up" aria-hidden="true"></i>
                                                             </a>

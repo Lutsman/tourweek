@@ -18,11 +18,11 @@
 @base-link-hover-color: @global-link-hover-color;
 @base-link-hover-text-decoration: underline;
 
-@base-strong-font-weight: bolder;
+@base-strong-font-weight: normal;
 @base-code-font-size: @global-small-font-size;
 @base-code-font-family: Consolas, monaco, monospace;
 @base-code-color: @global-danger-background;
-@base-em-color: @global-danger-background;
+@base-em-color: inherit;
 @base-ins-background: #ffd;
 @base-ins-color: @global-color;
 @base-mark-background: #ffd;
@@ -32,8 +32,8 @@
 
 @base-margin-vertical: @global-margin;
 
-@base-heading-font-family: @global-font-family;
-@base-heading-font-weight: 700;
+@base-heading-font-family: @font-lato-bold;
+@base-heading-font-weight: normal;
 @base-heading-color: @global-color;
 @base-heading-text-transform: none;
 @base-heading-margin-top: @global-medium-margin;
@@ -107,6 +107,16 @@
 .hook-base-link-hover() {
 }
 
+b,
+strong {
+  font-family: @font-lato-bold;
+}
+
+em {
+  font-family: @font-lato-italic;
+}
+
+
 // Text-level semantics
 // ========================================================================
 
@@ -122,16 +132,16 @@
 }
 
 .hook-base-h1() {
-  font-weight: 300;
+  font-family: @font-lato-light;
   margin-bottom: 40px;
 }
 
 .hook-base-h2() {
-  font-weight: 900;
+  font-family: @font-lato-black;
 }
 
 .hook-base-h3() {
-  font-weight: 300;
+  font-family: @font-lato-light;
 }
 
 .hook-base-h4() {
