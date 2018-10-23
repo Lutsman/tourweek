@@ -347,6 +347,19 @@ form {
   background-color: #e9eef3;
 }
 
+// uk-toggler
+[uk-toggle]:not(.uk-toggle-active) {
+  [opened-toggle] {
+    display: none;
+  }
+}
+
+.uk-toggle-active {
+  [closed-toggle] {
+    display: none;
+  }
+}
+
 /*Media*/
 
 @media (max-width: 959px) {
