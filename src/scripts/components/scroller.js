@@ -47,4 +47,6 @@ ScrollToAnchor.prototype.smoothScroll = function (selector, translation) {
     );
 };
 
-new ScrollToAnchor({});
+new ScrollToAnchor({
+    listenedBlock: '.js-search-start',
+});
