@@ -230,6 +230,13 @@ form {
   }
 }
 
+.tm-list-globe, .tm-list-count, .tm-list-arrow {
+
+  > li:nth-child(n+2), > li > ul {
+    margin-top: 20px;
+  }
+}
+
 .tm-list-globe {
 
   li {
@@ -248,7 +255,108 @@ form {
   }
 }
 
-.tm-list-count {}
+.tm-list-count {
+  counter-reset: item;
+
+  > li {
+    position: relative;
+    padding-left: 35px;
+
+    &::before {
+      content: counter(item);
+      counter-increment: item;
+      color: #fff;
+      text-align: center;
+      background-color: @global-orange;
+      border-radius: 50%;
+      position: absolute;
+      top: -1px;
+      left: 0;
+      min-width: 25px;
+      min-height: 25px;
+      padding: 0 5px;
+      line-height: 25px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.tm-list-arrow {
+  padding-left: 20px;
+
+  li {
+    position: relative;
+
+    &::before {
+      content: "\f054";
+      font-family: FontAwesome;
+      font-size: 14px;
+      color: @global-primary-background;
+      position: absolute;
+      top: 2px;
+      left: -20px;
+    }
+  }
+}
+
+.tm-marker-file {
+  color: #000;
+  border: 1px solid @global-border;
+  width: 370px;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 25px 40px 25px 70px;
+
+  &::before {
+    content: '';
+    background: url("../../images/icon-file.png") no-repeat;
+    display: block;
+    width: 33px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.tm-marked {
+  padding-left: 35px;
+}
+.tm-marked-orange {
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: @global-orange;
+    display: block;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  i {
+    color: @global-orange;
+  }
+}
+
+.tm-marked-title {
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: @global-blue;
+    display: block;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: -35px;
+    bottom: 0;
+  }
+}
 
 //navbar
 header {
