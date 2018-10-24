@@ -1,6 +1,14 @@
 .uk-list-divider {
   border-top: 1px solid @global-border;
   margin-bottom: @global-margin;
+
+  > li:first-child {
+    padding-top: 10px;
+  }
+
+  > li:last-child {
+    padding-bottom: 10px;
+  }
 }
 
 a.uk-light:hover {
@@ -243,6 +251,9 @@ form {
 .tm-list-count {}
 
 //navbar
+header {
+  z-index: 100;
+}
 
 .tm-pageheader {
   min-height: 500px;
@@ -290,17 +301,6 @@ form {
 }
 
 // nav
-// rubrics nav, nav divider
-
-.tm-rubrics-nav, .tm-nav-divider {
-  > li:first-child {
-    padding-top: 10px;
-  }
-
-  > li:last-child {
-    padding-bottom: 10px;
-  }
-}
 
 .tm-nav-divider {
   > li:nth-child(n+2) {
