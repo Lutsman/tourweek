@@ -222,6 +222,26 @@ form {
   }
 }
 
+.tm-list-globe {
+
+  li {
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: "\f0ac";
+      font-family: FontAwesome;
+      font-size: 18px;
+      color: @global-orange;
+      position: absolute;
+      top: -1px;
+      left: 0;
+    }
+  }
+}
+
+.tm-list-count {}
+
 //navbar
 
 .tm-pageheader {
