@@ -291,6 +291,65 @@ form {
   }
 }
 
+.tm-marker-file {
+  color: #000;
+  border: 1px solid @global-border;
+  width: 370px;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 25px 40px 25px 70px;
+
+  &::before {
+    content: '';
+    background: url("../../images/icon-file.png") no-repeat;
+    display: block;
+    width: 33px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.tm-marked {
+  padding-left: 35px;
+}
+.tm-marked-orange {
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: @global-orange;
+    display: block;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  i {
+    color: @global-orange;
+  }
+}
+
+.tm-marked-title {
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: @global-blue;
+    display: block;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: -35px;
+    bottom: 0;
+  }
+}
+
   //navbar
 
 .tm-pageheader {
