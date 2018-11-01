@@ -202,11 +202,21 @@
                                     <a href="#">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </a>
+                                    <div class="uk-navbar-dropdown"
+                                         uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
+                                        <div class="uk-container"></div>
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <i class="fa fa-sign-in" aria-hidden="true"></i>
                                     </a>
+                                    <div class="uk-background-default uk-dark" uk-drop="mode: click;">
+                                        <button class="uk-drop-close" type="button" uk-close></button>
+                                        <h3 class="uk-text-black">Авторизация на сайте</h3>
+
+
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -994,6 +1004,14 @@
                     <li><a href="#">Блогосфера</a></li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <!-- modal login form -->
+    <div id="tm-login-form" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-position-top-right">
+            <h2 class="uk-modal-title"></h2>
+            <button class="uk-modal-close-default" type="button" uk-close></button>
         </div>
     </div>
 
