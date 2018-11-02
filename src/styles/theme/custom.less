@@ -15,6 +15,10 @@ a.uk-light:hover {
   color: @global-inverse-color;
 }
 
+.uk-margin-xsmall-bottom {
+  margin-bottom: 5px;
+}
+
 .uk-light .uk-select:not([multiple]):not([size]),
 .uk-section-primary:not(.uk-preserve-color) .uk-select:not([multiple]):not([size]),
 .uk-section-secondary:not(.uk-preserve-color) .uk-select:not([multiple]):not([size]),
@@ -31,9 +35,40 @@ a.uk-light:hover {
 }
 
 .uk-dark {
+  color: @global-color;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: @global-emphasis-color;
+  }
+
+  a:not(.uk-button) {
+    color: @global-link-color;
+
+    &:hover {
+      color: @global-link-hover-color;
+    }
+  }
 
   .uk-close {
+    color: @global-muted-color;
+  }
 
+  .uk-input {
+    color: @global-color;
+    border-color: @global-border;
+  }
+
+  .uk-checkbox {
+    background-color: transparent;
+    border-color: @global-border;
+
+    &:focus {
+      border-color: @global-border;
+    }
+  }
+
+  .uk-text-muted {
+    color: @global-muted-color !important;
   }
 }
 
@@ -127,6 +162,63 @@ form {
 
   .uk-input, .uk-select:not([multiple]):not([size]) {
     height: 48px;
+  }
+}
+
+.tm-authorization {
+  width: 415px;
+}
+
+.tm-login {
+  padding: 30px 50px 20px;
+}
+
+.tm-authorization-footer {
+  padding: 20px 50px 25px;
+}
+
+.tm-login-social {
+  line-height: 1;
+  padding: 10px;
+  border: solid 1px @global-border;
+}
+
+.tm-search-header {
+  position: relative;
+  font-size: 25px;
+  padding: 5px 0;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    border-bottom: 3px solid @global-primary-background;
+  }
+
+  .uk-input, .uk-input:focus {
+    background-color: transparent;
+    color: #6f8faf;
+    border-color: transparent;
+  }
+
+  .uk-input::placeholder {
+    color: #6f8faf;
+  }
+
+  .uk-form-icon {
+    font-size: 30px;
+    color: #fff;
+
+    &:not(.uk-form-icon-flip) ~ .uk-input {
+      padding-left: 50px !important;
+    }
+  }
+
+  .uk-button-small {
+    font-size: 12px;
   }
 }
 
