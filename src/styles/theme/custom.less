@@ -167,6 +167,7 @@ form {
 
 .tm-authorization {
   width: 415px;
+  max-width: 100%;
 }
 
 .tm-login {
@@ -610,5 +611,25 @@ header {
 
   .uk-text-lead {
     font-size: @global-large-font-size;
+  }
+
+  .tm-search-header {
+    font-size: 18px;
+
+    .uk-form-icon {
+      font-size: 20px;
+    }
+
+    .uk-form-icon:not(.uk-form-icon-flip) ~ .uk-input {
+      padding-left: 36px !important;
+    }
+  }
+
+  .tm-login {
+    padding: 30px 20px 20px;
+  }
+
+  .tm-authorization-footer {
+    padding: 20px;
   }
 }
