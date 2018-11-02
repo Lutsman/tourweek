@@ -195,7 +195,7 @@
 
                         <div class="uk-navbar-right">
                             <div class="uk-navbar-item uk-visible@s">
-                                <a href="#" class="uk-button uk-button-small uk-button-orange">Авиабилеты</a>
+                                <a href="#" class="uk-button uk-button-small uk-button-orange uk-text-untransformed">Авиабилеты</a>
                             </div>
                             <ul class="uk-navbar-nav">
                                 <li>
@@ -204,22 +204,77 @@
                                     </a>
                                     <div class="uk-navbar-dropdown"
                                          uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
-                                        <div class="uk-container"></div>
+                                        <div class="uk-container">
+                                            <form action="/" class="tm-search-header uk-width-xxlarge uk-margin-auto">
+                                                <div class="uk-flex">
+                                                    <div class="uk-form-controls uk-inline uk-width-1-1">
+                                                        <span class="uk-form-icon">
+                                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                                        </span>
+
+                                                        <input class="uk-input" type="search" placeholder="Поиск по сайту">
+                                                    </div>
+                                                    <a href="#" class="uk-button uk-button-small uk-button-blue">Найти</a>
+                                                </div>
+                                            </form>
+
+
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <i class="fa fa-sign-in" aria-hidden="true"></i>
                                     </a>
-                                    <div class="uk-background-default uk-dark" uk-drop="mode: click;">
-                                        <button class="uk-drop-close" type="button" uk-close></button>
-                                        <div class=""></div>
-                                        <h3 class="uk-text-black uk-text-center">Авторизация на сайте</h3>
-                                        <p class="uk-text-center">Если вы уже зарегистрированы, пожалуйста,
-                                            введите ваш логин и пароль.
-                                        </p>
+                                    <div class="tm-authorization uk-background-default uk-dark" uk-drop="mode: click;">
+                                        <button class="uk-drop-close uk-position-small uk-position-top-right" type="button" uk-close></button>
+                                        <div class="tm-login">
+                                            <h3 class="uk-text-black uk-text-center uk-margin-small-bottom">Авторизация на сайте</h3>
+                                            <p class="uk-text-center uk-margin-remove-top">Если вы уже зарегистрированы, пожалуйста,
+                                                введите ваш логин и пароль.
+                                            </p>
+                                            
+                                            <div class="tm-login-social uk-background-secondary uk-margin-bottom">
+                                                <div class="uk-child-width-expand uk-grid-collapse uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                       <!-- #TODO сделать сосети правильно, ресурс https://ulogin.ru/constructor.php?display=panel -->
+                                                        <script src="//ulogin.ru/js/ulogin.js"></script>
+                                                        <div id="uLogin" data-ulogin="display=panel;theme=flat;fields=first_name,last_name;providers=vkontakte,facebook,odnoklassniki,google;hidden=;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="uk-text-little"><i>Войти используя аккаунт соц.сетей</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-
+                                            <form action="/" class="uk-text-little">
+                                                <div class="uk-margin-small">
+                                                    <input class="uk-input" type="text" placeholder="Введите логин">
+                                                </div>
+                                                <div class="uk-margin-small">
+                                                    <input class="uk-input" type="password" placeholder="Введите пароль">
+                                                </div>
+                                                <div class="uk-flex uk-flex-between uk-flex-middle uk-margin">
+                                                    <div>
+                                                        <label class="uk-text-muted"><input class="uk-checkbox uk-margin-small-right" type="checkbox" name="radio-gender">Чужой компьютер</label>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#">Забыли пароль?</a>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-form-controls">
+                                                    <a href="" class="uk-button uk-button-large uk-button-blue uk-width-1-1">Войти</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        
+                                        <div class="tm-authorization-footer uk-background-secondary uk-text-center">
+                                            <div class="uk-text-medium uk-margin-xsmall-bottom">Впервые на сайте?</div>
+                                            <div>
+                                                <a href="" class="uk-button uk-button-large uk-button-orange uk-width-1-1">Зарегистрироваться</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
