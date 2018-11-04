@@ -7,7 +7,7 @@
 // ========================================================================
 
 @button-line-height: @global-control-height - (@button-border-width * 2);
-@button-small-line-height: @global-control-small-height - (@button-border-width * 2);
+@button-small-line-height: 32px - (@button-border-width * 2);
 @button-large-line-height: @global-control-large-height - (@button-border-width * 2);
 
 @button-font-size: @global-font-size;
@@ -167,6 +167,7 @@
 
 .hook-button-small() {
   text-transform: @button-small-text-transform;
+  padding-top: 2px;
 }
 
 .hook-button-large() {
