@@ -154,6 +154,33 @@ form {
   }
 }
 
+.tm-checkbox-blue {
+
+  .tm-checkbox {
+    display: block;
+    position: relative;
+    padding: 15px 15px 15px 50px;
+    background-color: #000;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 20px;
+      height: 20px;
+      font-family: FontAwesome;
+      color: @global-blue;
+      border: solid 1px @global-blue;
+    }
+  }
+
+  input:checked + .tm-checkbox::before {
+    content: '\f00c';
+  }
+}
+
 .tm-checkbox-set {
 
   .tm-checkbox {
@@ -236,6 +263,10 @@ form {
 }
 
   // content
+
+.tm-background-black {
+  background-color: #000;
+}
 
 .tm-companion-item {
 
@@ -468,8 +499,6 @@ form {
     bottom: 0;
   }
 }
-
-
 
 .tm-airline-title {
   font-size: 20px;
