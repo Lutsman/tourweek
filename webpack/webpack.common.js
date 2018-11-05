@@ -71,6 +71,10 @@ module.exports = {
             template: './src/airlines.html',
             filename: "airlines.html",
         }),
+        new HtmlWebpackPlugin({
+            template: './src/airline-inner.html',
+            filename: "airline-inner.html",
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
