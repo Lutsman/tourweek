@@ -76,8 +76,8 @@ module.exports = {
             filename: "airline-inner.html",
         }),
         new HtmlWebpackPlugin({
-            template: './src/blogs_add_post.html',
-            filename: "blogs_add_post.html",
+            template: './src/blogs-add-post.html',
+            filename: "blogs-add-post.html",
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
