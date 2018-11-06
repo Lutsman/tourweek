@@ -198,6 +198,23 @@ form {
   }
 }
 
+.tm-checkbox-topic {
+
+  .tm-checkbox {
+    display: block;
+    line-height: @global-control-small-height;
+    text-align: center;
+    color: #666;
+    background-color: @global-muted-background;
+    border: 1px solid @global-border;
+  }
+
+  input:checked + .tm-checkbox {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
 .tm-form-pageheader {
 
   .uk-input, .uk-select:not([multiple]):not([size]) {
@@ -273,6 +290,14 @@ form {
   width: 215px;
   max-width: 100%;
   box-sizing: border-box;
+}
+
+.tm-padding-10 {
+  padding: 10px;
+}
+
+.tm-bordered {
+  border: 1px solid @global-border;
 }
 
 .tm-panel-bordered {
