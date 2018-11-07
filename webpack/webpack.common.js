@@ -83,6 +83,14 @@ module.exports = {
             template: './src/blogs-interesting.html',
             filename: "blogs-interesting.html",
         }),
+        new HtmlWebpackPlugin({
+            template: './src/city.html',
+            filename: "city.html",
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/country.html',
+            filename: "country.html",
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
