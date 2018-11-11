@@ -300,6 +300,11 @@ form {
   border: 1px solid @global-border;
 }
 
+.tm-button-relative-top {
+  position: relative;
+  top: -19px;
+}
+
 .tm-panel-bordered {
   padding: 30px 25px;
   border: 1px solid @global-border;
@@ -628,9 +633,36 @@ header {
   //}
 }
 
+.tm-contents-nav {
+  border-top: none;
+
+  > li:nth-child(n+2) {
+    border-top-color: #c6c6c6;
+  }
+
+  > li > a {
+    padding: 5px 0;
+  }
+}
+
 //list
 .tm-news-list {
+
   .uk-link-text {
+    font-family: @font-lato-bold;
+  }
+}
+
+.tm-city-description-list {
+  background-color: #e9eef3;
+
+  > dt:nth-child(n+2) {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top-color: #c6c6c6;
+  }
+
+  dd {
     font-family: @font-lato-bold;
   }
 }
